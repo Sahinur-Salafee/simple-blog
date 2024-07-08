@@ -3,12 +3,12 @@ require 'Database.php';
 
 $database = new Database($config);
 
-$query = "SELECT * FROM posts";
+$query = "SELECT * FROM posts WHERE user_id = :user_id";
 $parameters = [
-    'user_id' => 1,
+    'user_id' => 2,
 ];
 
-$posts = $database->query($query)->fetchAll();
+$posts = $database->query($query, $parameters)->fetchAll();
 ?>
 
 <section class="blog-list-page">
@@ -23,7 +23,7 @@ $posts = $database->query($query)->fetchAll();
                             <a href="controllers/single.php"><?php echo $post['title']; ?></a>
                         </li>
                         <li>
-                            <a href="controllers/single.php">Learn how can you learn about programming.</a>
+                            <a href="controllers/single.php"><?php echo $post['description']; ?></a>
                         </li>
                         <?php endforeach; ?>
                     </ul>

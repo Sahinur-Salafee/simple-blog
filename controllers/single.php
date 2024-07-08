@@ -1,15 +1,6 @@
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            <div class="blog-content">
-                <div class="blog-title">
-                    <h1>Blog Title</h1>
-                    <p>Blog descriptions...</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<?php 
-    require '../views/partials/footer.php';
-?>
+<?php
+
+require dirname(__DIR__) . '/config.php';
+require PARTIALS_PATH . '/header.php';
+require VIEWS_PATH . '/single.view.php';
+require PARTIALS_PATH . '/footer.php';

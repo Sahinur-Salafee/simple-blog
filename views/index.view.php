@@ -4,10 +4,10 @@
             <h1>Here is All My Blogs</h1>
             <ul>
                 <li>
-                    <a href="views/single.view.php">First Blog</a>
+                    <a href="controllers/single.php">First Blog</a>
                 </li>
                 <li>
-                    <a href="views/single.view.php">Learn how can you learn about programming.</a>
+                    <a href="controllers/single.php">Learn how can you learn about programming.</a>
                 </li>
             </ul>
         </div>

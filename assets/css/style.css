@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+section {
+	padding: 60px 0;
+}
+
 .create-blog-post-form {
 	padding: 60px 0;
 }

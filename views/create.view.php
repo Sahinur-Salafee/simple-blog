@@ -14,6 +14,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Create Blog Post</button>
                 </form>
+                <a href="./../index.php" class="btn btn-primary">Back to blog list</a>
             </div>
         </div>
     </div>

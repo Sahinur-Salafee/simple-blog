@@ -22,9 +22,6 @@ $posts = $database->query($query, $parameters)->fetchAll();
                         <li>
                             <a href="controllers/single.php"><?php echo $post['title']; ?></a>
                         </li>
-                        <li>
-                            <a href="controllers/single.php"><?php echo $post['description']; ?></a>
-                        </li>
                         <?php endforeach; ?>
                     </ul>
                 </div>

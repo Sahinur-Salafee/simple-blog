@@ -10,7 +10,7 @@
                     </div>
                     <div class="form-group">
                         <label for="blogDesc">Blog Description</label>
-                        <input type="text" name="description" class="form-control" id="blogDesc" aria-describedby="emailHelp" placeholder="Blog Description">
+                        <textarea type="text" name="description" class="form-control" id="blogDesc" aria-describedby="emailHelp" placeholder="Blog Description"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Create Blog Post</button>
                 </form>

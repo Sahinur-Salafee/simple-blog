@@ -18,9 +18,9 @@ $posts = $database->query($query, $parameters)->fetchAll();
                 <div class="blog-wrapper">
                     <h1>Here is My All Blogs</h1>
                     <ul>
-                        <?php foreach($posts as $post): ?>
+                        <?php foreach($posts as $post): var_dump($post['id']);?>
                         <li>
-                            <a href="controllers/single.php"><?php echo $post['title']; ?></a>
+                            <a href="controllers/single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a>
                         </li>
                         <?php endforeach; ?>
                     </ul>

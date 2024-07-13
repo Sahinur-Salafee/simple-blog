@@ -1,6 +1,4 @@
 <?php 
-
-$config = dirname(__DIR__) . '/config.php';
 require '../Database.php';
 $database = new Database($config);
 $posts = "SELECT * FROM posts WHERE user_id = 2";

@@ -5,7 +5,7 @@ $database = new Database($config);
 
 $query = "SELECT * FROM posts WHERE user_id = :user_id";
 $parameters = [
-    'user_id' => 2,
+    'user_id' => 4,
 ];
 
 $posts = $database->query($query, $parameters)->fetchAll();

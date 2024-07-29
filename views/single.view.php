@@ -1,7 +1,7 @@
 <?php 
 require '../Database.php';
 $database = new Database($config);
-$posts = "SELECT * FROM posts WHERE user_id = 2";
+$posts = "SELECT * FROM posts WHERE user_id = 4";
 // $parameters = [
 //     'user_id' => 2,
 // ];
